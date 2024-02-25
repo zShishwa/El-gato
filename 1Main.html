@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stain removal Services</title>
+    <link rel="stylesheet" type="text/css" href="Main.css">
+</head>
+<body>
+    <ul class="navigation"> 
+        <li><a href="1Main.html">Home</a></li> <!--- Links naar andere websites-->
+        <li><a href="1Services.html">Service</a></li>
+        <li><a href="1Contact.html">Contact</a></li>
+
+        <span class="toggleMenu"></span> 
+    </ul> <!-- stuk script hieronder zorgt voor dat Navigation active wordt op click-->
+    <script>  
+        let toggleMenu = document.querySelector(' .toggleMenu');  
+        let navigation = document.querySelector(' .navigation');
+        toggleMenu.onclick = function(){
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
